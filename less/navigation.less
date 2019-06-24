@@ -1,1 +1,41 @@
 // Navigation code here
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid @nav-border;
+    font-size: 1.2rem;
+    background-color: @nav-bg;
+
+    @media @tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media @phone {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .title {
+        padding: 15px;
+        margin: 0 auto;
+        }
+
+        .nav {
+            padding: 15px;
+            margin: 0 auto;
+
+            a {
+                padding: 15px;
+                font-family: 'Ubuntu', sans-serif;
+                color: @nav-font;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
